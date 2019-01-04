@@ -51,7 +51,7 @@ button::-moz-focus-inner,
 /* Custom views styles */
 
 .view1 {
-  background-color: #30d5c7;
+  background-color: black;
 }
 
 .view2 {
@@ -92,7 +92,7 @@ button::-moz-focus-inner,
 
 /* GUI */
 
-.box {
+/* .box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -116,7 +116,7 @@ button::-moz-focus-inner,
   font-family: Arial, Tahoma;
   font-size: 32px;
   text-align: center;
-}
+} */
 
 .menu {
   position: fixed;
@@ -207,13 +207,6 @@ button::-moz-focus-inner,
 a {
   text-decoration: none;
   color: #000;
-}
-
-h1 {
-  margin-left: 18px;
-  font-family: Arial, Tahoma;
-  font-size: 20px;
-  color: #0c7068;
 }
 
 ul li {
@@ -411,6 +404,31 @@ input[type="button"]:active {
 }
 
 /* 커스터마이징 */
+
+.likelion-intro__wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100%;
+  /* background-image: url(https://d2hmp4n7p97ldw.cloudfront.net/assets/home/slide/02-background-be82ae1605d3b8d909373f516e7aa593da9ab78ded7efd9177f94977d916b1c6.png); */
+  /* background-size: cover; */
+  /* background-size: 100px 100px; */
+
+}
+
+.likelion-intro__header,
+.likelion-intro__logo,
+.likelion-intro__arrow {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.likelion-intro__logo {}
+
+.likelion-intro__arrow {
+  font-size: 2em;
+}
 
 .likelion-info__container {
   display: grid;

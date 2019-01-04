@@ -1,49 +1,46 @@
 ﻿<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=no"
-    />
-    <meta
-      name="author"
-      content="Copyright (c) 2016 Marcin Gierczak (www.viewdesic.com)"
-    />
-    <meta
-      name="description"
-      content="viewScroller plugin by Marcin Gierczak. This plugin allows creating fullscreen scrollable webpage."
-    />
-    <meta
-      name="keywords"
-      content="viewScroller, fullscreen, html fullpage, scroll page, page scrolling, page scroll, full scroll"
-    />
-    <title>2019 LIKELION AT WKU</title>
-    <link rel="stylesheet" type="text/css" href="viewScroller.css" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <style>
-      /* Styles specific for this example */
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="author" content="Copyright (c) 2016 Marcin Gierczak (www.viewdesic.com)" />
+  <meta name="description" content="viewScroller plugin by Marcin Gierczak. This plugin allows creating fullscreen scrollable webpage." />
+  <meta name="keywords" content="viewScroller, fullscreen, html fullpage, scroll page, page scrolling, page scroll, full scroll" />
+  <title>2019 LIKELION AT WKU</title>
+  <link rel="stylesheet" type="text/css" href="viewScroller.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <style>
+    /* Styles specific for this example */
 
       .arrows {
         left: 10px;
       }
     </style>
-  </head>
+</head>
 
-  <body>
-    <!-- <div class="panel"></div> -->
-    <div class="mainbag">
-      <div vs-anchor="view-1" class="mainview view1">
-        <div class="vs-center-wrap">
-          <div class="vs-center">
-            <img src="images/footer-logo.png" alt="logo" width="300px" />
-          </div>
+<body>
+  <!-- <div class="panel"></div> -->
+  <div class="mainbag">
+    <div vs-anchor="view-1" class="mainview view1">
+      <div class="likelion-intro__wrapper">
+        <h1 class="likelion-intro__header">
+          원광대학교 멋쟁이 사자처럼
+        </h1>
+        <div class="likelion-intro__logo">
+          <img src="images/footer-logo.png" alt="logo" width="300px" />
         </div>
+        <span class="likelion-intro__arrow">
+          <i class="fas fa-arrow-circle-down"></i>
+        </span>
       </div>
-      <div vs-anchor="view-2" class="mainview">
-        <div class="subbag">
-          <div vs-anchor="subview-a" class="subview subview-a">
-            <!-- <div class="box">
+    </div>
+    <div vs-anchor="view-2" class="mainview">
+      <div class="subbag">
+        <div vs-anchor="subview-a" class="subview subview-a">
+          <!-- <div class="box">
               <div class="info">
                 임세희
                 <div class="pos">
@@ -61,91 +58,79 @@
                 </div>
               </div>
             </div> -->
-            <div class="likelion-info__container">
-              <div class="likelion-info__leftWrapper">
-                <div class="likelion-info__left">
-                  원광대학교 멋쟁이사자처럼 _ 임세희
-                </div>
+          <div class="likelion-info__container">
+            <div class="likelion-info__leftWrapper">
+              <div class="likelion-info__left">
+                원광대학교 멋쟁이사자처럼 _ 임세희
               </div>
-              <div class="likelion-info__rightWrapper">
-                <div class="likelion-info__right">
-                  <div class="skill__wrapper">
-                    <div class="skill">
-                      <span class="skill__icon">HTML</span>
-                    </div>
-                    <div class="skill">
-                      <span class="skill__icon">CSS</span>
-                    </div>
-                    <div class="skill">
-                      <span class="skill__icon">Python</span>
-                    </div>
-                    <div class="skill">
-                      <span class="skill__icon">AWS</span>
-                    </div>
+            </div>
+            <div class="likelion-info__rightWrapper">
+              <div class="likelion-info__right">
+                <div class="skill__wrapper">
+                  <div class="skill">
+                    <span class="skill__icon">HTML</span>
+                  </div>
+                  <div class="skill">
+                    <span class="skill__icon">CSS</span>
+                  </div>
+                  <div class="skill">
+                    <span class="skill__icon">Python</span>
+                  </div>
+                  <div class="skill">
+                    <span class="skill__icon">AWS</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div vs-anchor="subview-b" class="subview subview-b">
-            <div class="box">
-              <div class="info">
-                Subview B
-                <div class="pos">
-                  <input type="button" value="&lt;" class="vs-subview-prev" />
-                  <a href="#subview-a" class="vs-anchor"
-                    ><input type="button" value="A"
-                  /></a>
-                  <a href="#subview-b" class="vs-anchor"
-                    ><input type="button" value="B"
-                  /></a>
-                  <a href="#subview-c" class="vs-anchor"
-                    ><input type="button" value="C"
-                  /></a>
-                  <input type="button" value="&gt;" class="vs-subview-next" />
-                </div>
+        </div>
+        <div vs-anchor="subview-b" class="subview subview-b">
+          <div class="box">
+            <div class="info">
+              Subview B
+              <div class="pos">
+                <input type="button" value="&lt;" class="vs-subview-prev" />
+                <a href="#subview-a" class="vs-anchor"><input type="button" value="A" /></a>
+                <a href="#subview-b" class="vs-anchor"><input type="button" value="B" /></a>
+                <a href="#subview-c" class="vs-anchor"><input type="button" value="C" /></a>
+                <input type="button" value="&gt;" class="vs-subview-next" />
               </div>
             </div>
           </div>
-          <div vs-anchor="subview-c" class="subview subview-c">
-            <div class="box">
-              <div class="info">
-                Subview C
-                <div class="pos">
-                  <input type="button" value="&lt;" class="vs-subview-prev" />
-                  <a href="#subview-a" class="vs-anchor"
-                    ><input type="button" value="A"
-                  /></a>
-                  <a href="#subview-b" class="vs-anchor"
-                    ><input type="button" value="B"
-                  /></a>
-                  <a href="#subview-c" class="vs-anchor"
-                    ><input type="button" value="C"
-                  /></a>
-                  <input type="button" value="&gt;" class="vs-subview-next" />
-                </div>
+        </div>
+        <div vs-anchor="subview-c" class="subview subview-c">
+          <div class="box">
+            <div class="info">
+              Subview C
+              <div class="pos">
+                <input type="button" value="&lt;" class="vs-subview-prev" />
+                <a href="#subview-a" class="vs-anchor"><input type="button" value="A" /></a>
+                <a href="#subview-b" class="vs-anchor"><input type="button" value="B" /></a>
+                <a href="#subview-c" class="vs-anchor"><input type="button" value="C" /></a>
+                <input type="button" value="&gt;" class="vs-subview-next" />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div vs-anchor="view-3" class="mainview view3">
-        <div class="likelion-activitys">
-          <div class="likelion-hackerton">
-            <div class="hackerton-item">2015</div>
-            <div class="hackerton-item">2016</div>
-            <div class="hackerton-item">2017</div>
-            <div class="hackerton-item">2018</div>
-          </div>
-          <div class="likelion-project">
-            <div class="project-item">1</div>
-            <div class="project-item">2</div>
-            <div class="project-item">3</div>
-            <div class="project-item">4</div>
-          </div>
+    </div>
+    <div vs-anchor="view-3" class="mainview view3">
+      <div class="likelion-activitys">
+        <div class="likelion-hackerton">
+          <div class="hackerton-item">2015</div>
+          <div class="hackerton-item">2016</div>
+          <div class="hackerton-item">2017</div>
+          <div class="hackerton-item">2018</div>
+        </div>
+        <div class="likelion-project">
+          <div class="project-item">1</div>
+          <div class="project-item">2</div>
+          <div class="project-item">3</div>
+          <div class="project-item">4</div>
         </div>
       </div>
-      <!-- <div vs-anchor="view-4" class="mainview">
+    </div>
+    <!-- <div vs-anchor="view-4" class="mainview">
         <div class="subbag">
           <div vs-anchor="subview-d" class="subview subview-d">
             <div class="box">
@@ -183,57 +168,58 @@
           </div>
         </div>
       </div> -->
-      <div vs-anchor="view-4" class="mainview view4">
-        <div class="apply__wrapper">
-          <div class="apply__info">
-            원광대학교 멋쟁이 사자처럼에 지원해보세요.
-          </div>
-          <div class="apply__major">전공자</div>
-          <div class="apply__not-major">비 전공자</div>
+    <div vs-anchor="view-4" class="mainview view4">
+      <div class="apply__wrapper">
+        <div class="apply__info">
+          원광대학교 멋쟁이 사자처럼에 지원해보세요.
         </div>
+        <div class="apply__major">전공자</div>
+        <div class="apply__not-major">비 전공자</div>
       </div>
     </div>
+  </div>
 
-    <script src="jquery-3.1.0.min.js"></script>
-    <script src="jquery.easing.min.js"></script>
-    <script src="jquery.mousewheel.min.js"></script>
-    <!-- <script src="viewScroller.min.js"></script> //-->
-    <script src="viewScroller.js"></script>
-    <script>
-      $(document).ready(function() {
-        // Sets viewScroller with sample events
-        $(".mainbag").viewScroller({
-          useScrollbar: false,
-          beforeChange: function() {
-            console.log("beforeChange fired!");
-            return false; // It means that views change will be terminated
-          },
-          afterChange: function() {
-            console.log("afterChange fired!");
-          },
-          beforeResize: function() {
-            console.log("beforeResize fired!");
-          },
-          afterResize: function() {
-            console.log("afterResize fired!");
-          }
-        });
-
-        //Show / hide examples panel
-        $(".examples").hide();
-        $(".examples-show").click(function() {
-          $(".examples").toggle();
-        });
-
-        // Turnon / turnoff the scroll views when they are animate
-        $("#scroll").on("click", function() {
-          if ($("#scroll").prop("checked")) {
-            $.fn.viewScroller.setChangeWhenAnim(true);
-          } else {
-            $.fn.viewScroller.setChangeWhenAnim(false);
-          }
-        });
+  <script src="jquery-3.1.0.min.js"></script>
+  <script src="jquery.easing.min.js"></script>
+  <script src="jquery.mousewheel.min.js"></script>
+  <!-- <script src="viewScroller.min.js"></script> //-->
+  <script src="viewScroller.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Sets viewScroller with sample events
+      $(".mainbag").viewScroller({
+        useScrollbar: false,
+        beforeChange: function () {
+          console.log("beforeChange fired!");
+          return false; // It means that views change will be terminated
+        },
+        afterChange: function () {
+          console.log("afterChange fired!");
+        },
+        beforeResize: function () {
+          console.log("beforeResize fired!");
+        },
+        afterResize: function () {
+          console.log("afterResize fired!");
+        }
       });
-    </script>
-  </body>
+
+      //Show / hide examples panel
+      $(".examples").hide();
+      $(".examples-show").click(function () {
+        $(".examples").toggle();
+      });
+
+      // Turnon / turnoff the scroll views when they are animate
+      $("#scroll").on("click", function () {
+        if ($("#scroll").prop("checked")) {
+          $.fn.viewScroller.setChangeWhenAnim(true);
+        } else {
+          $.fn.viewScroller.setChangeWhenAnim(false);
+        }
+      });
+    });
+  </script>
+</body>
+
 </html>
