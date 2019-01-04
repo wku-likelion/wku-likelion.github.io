@@ -9,6 +9,7 @@
 
 /* Reset styles */
 
+/* 눈누 폰트페이스 추가 */
 @font-face {
   font-family: 'yg-jalnan';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
@@ -22,6 +23,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 
 body {
   font-family: 'GyeonggiBatang', 'yg-jalnan',
@@ -59,7 +61,7 @@ button::-moz-focus-inner,
 }
 
 .view3 {
-  background-color: #1c7b73;
+  background-color: black;
 }
 
 .view4 {
@@ -92,64 +94,6 @@ button::-moz-focus-inner,
 
 /* GUI */
 
-/* .box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -75px;
-  margin-left: -100px;
-  width: 200px;
-  height: 150px;
-  background-color: #ff3547;
-  border-radius: 10px;
-  box-shadow: 5px 4px 0 0 rgba(179, 13, 35, 1);
-}
-
-.info {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -35px;
-  margin-left: -100px;
-  width: 200px;
-  height: 70px;
-  font-family: Arial, Tahoma;
-  font-size: 32px;
-  text-align: center;
-} */
-
-.menu {
-  position: fixed;
-  margin-top: 50px;
-  font-family: Arial, Tahoma;
-  font-size: 13px;
-  z-index: 10;
-}
-
-.menu-text {
-  position: fixed;
-  bottom: 10px;
-  line-height: 28px;
-  font-family: Arial, Tahoma;
-  font-size: 14px;
-  border-radius: 5px;
-  padding: 5px 5px;
-  background-color: #fff;
-  z-index: 20;
-}
-
-.panel {
-  position: fixed;
-  height: 100%;
-  width: 140px;
-  background-color: #e2face;
-}
-
-.pos {
-  font-family: Arial, Tahoma;
-  font-size: 14px;
-}
-
 .link:hover,
 .link-small:hover {
   text-decoration: underline;
@@ -157,14 +101,6 @@ button::-moz-focus-inner,
 
 .link-small {
   font-size: 11px;
-}
-
-.forkme {
-  position: fixed;
-  z-index: 30;
-  top: 0;
-  right: 0;
-  border: 0;
 }
 
 .logo {
@@ -175,26 +111,6 @@ button::-moz-focus-inner,
   max-height: 488px;
 }
 
-.arrows {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  z-index: 10;
-}
-
-.examples {
-  position: fixed;
-  top: 0;
-  left: 140px;
-  width: 200px;
-  height: 100%;
-  padding-left: 10px;
-  z-index: 10;
-  /*border-right: 10px solid #fff;*/
-  background: rgba(255, 255, 255, 0.6);
-  font-family: Arial;
-  font-size: 16px;
-}
 
 .scroll-checkbox {
   position: relative;
@@ -496,13 +412,14 @@ input[type="button"]:active {
 .project-item {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-top: 30px;
   width: 100%;
 }
 
 .hackerton-item:hover,
 .project-item:hover {
-  border-radius: 50%;
+  opacity: 0.5;
 }
 
 .hackerton-item:first-child {
@@ -510,15 +427,19 @@ input[type="button"]:active {
 }
 
 .hackerton-item:nth-child(2) {
-  background-color: #686de0;
+  background-color: #e056fd;
 }
 
 .hackerton-item:nth-child(3) {
-  background-color: #e056fd;
+  background-image: url(images/hackerton1.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
 .hackerton-item:last-child {
-  background-color: #e056fd;
+  background-image: url(images/hackerton2.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
 .project-item:first-child {
