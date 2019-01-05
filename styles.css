@@ -531,27 +531,6 @@ input[type="button"]:active {
   transition: 0.3s;
 }
 
-/*비 전공자*/
-.apply__non-majorbtn {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  text-align: center;
-  width: 150px;
-  height: 150px;
-  border: 3px solid #e74c3c;
-  border-radius: 50%;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.apply__non-majorIcon i {
-  color: #e74c3c;
-}
-
-.apply__non-major {
-  color: #e74c3c;
-}
-
 .apply__majorbtn:hover,
 .apply__non-majorbtn:hover {
   background-color: white;
@@ -571,4 +550,26 @@ input[type="button"]:active {
   font-size: 1.5rem;
   font-weight: bold;
   color: #f39c12;
+}
+
+/*비 전공자*/
+.apply__non-majorbtn {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  border: 3px solid #e74c3c;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.apply__non-majorIcon i {
+  color: #e74c3c;
+}
+
+.apply__non-major {
+  color: #e74c3c;
 }
