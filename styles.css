@@ -12,16 +12,14 @@
 /* 눈누 폰트페이스 추가 */
 @font-face {
   font-family: "yg-jalnan";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "GyeonggiBatang";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -326,8 +324,7 @@ input[type="button"]:active {
   align-items: center;
 }
 
-.likelion-intro__logo {
-}
+.likelion-intro__logo {}
 
 .likelion-intro__arrow {
   font-size: 2em;
@@ -394,8 +391,9 @@ input[type="button"]:active {
 
 .likelion-hackerton,
 .likelion-project {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-auto-flow: dense;
 }
 
 .hackerton-item,
@@ -403,33 +401,25 @@ input[type="button"]:active {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 30px;
-  width: 100%;
-}
-
-.hackerton-item:hover,
-.project-item:hover {
-  opacity: 0.5;
-}
-
-.hackerton-item:first-child {
-  background-color: #f6e58d;
 }
 
 .hackerton-item:nth-child(2) {
-  background-color: #e056fd;
+  background-image: url(images/ideaton.png);
+  background-size: cover;
+  background-position: 50% 0%;
 }
 
 .hackerton-item:nth-child(3) {
   background-image: url(images/hackerton1.jpg);
   background-size: cover;
-  background-position: center center;
+  background-position: 50% 30%;
+
 }
 
 .hackerton-item:last-child {
   background-image: url(images/hackerton2.jpg);
   background-size: cover;
-  background-position: center center;
+  background-position: 50% 50%;
 }
 
 .project-item:first-child {
