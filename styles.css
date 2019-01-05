@@ -448,7 +448,7 @@ input[type="button"]:active {
   background-color: powderblue;
 }
 
-.apply__wrapper {
+/* .apply__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100%;
@@ -485,4 +485,90 @@ input[type="button"]:active {
 .apply__non-major {
   color: white;
   background-color: #e74c3c;
+} */
+
+.apply__wrapper {
+  background-color: black;
+  /* background-image: url("images/hackerton3.jpg"); */
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  height: 100%;
+}
+
+.apply__info {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.apply__info-title span {
+  border-bottom: 3px solid #e67e22;
+  color: #e67e22;
+  font-size: 50px;
+}
+.apply__form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+/*전공자*/
+.apply__majorbtn {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  border: 3px solid #f39c12;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  color: #e67e22;
+  transition: 0.3s;
+}
+
+/*비 전공자*/
+.apply__non-majorbtn {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  border: 3px solid #e74c3c;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.apply__non-majorIcon i {
+  color: #e74c3c;
+}
+
+.apply__non-major {
+  color: #e74c3c;
+}
+
+.apply__majorbtn:hover,
+.apply__non-majorbtn:hover {
+  background-color: white;
+}
+
+.apply__majorIcon i,
+.apply__non-majorIcon i {
+  margin-top: 20px;
+  display: inline-block;
+  font-size: 70px;
+  color: #f39c12;
+}
+
+.apply__major,
+.apply__non-major {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f39c12;
 }
