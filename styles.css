@@ -310,9 +310,6 @@ input[type="button"]:active {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   height: 100%;
-  /* background-image: url(https://d2hmp4n7p97ldw.cloudfront.net/assets/home/slide/02-background-be82ae1605d3b8d909373f516e7aa593da9ab78ded7efd9177f94977d916b1c6.png); */
-  /* background-size: cover; */
-  /* background-size: 100px 100px; */
 }
 
 .likelion-intro__header,
@@ -324,7 +321,28 @@ input[type="button"]:active {
   align-items: center;
 }
 
-.likelion-intro__logo {}
+.likelion-intro__header {
+  font-size: 3em;
+  color: white;
+  margin: 20px 0 20px 0;
+}
+
+.likelion-intro__header {
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5), 0 0 40px rgb(199, 118, 25), 0 0 70px rgb(199, 118, 25), 0 0 80px rgb(199, 118, 25), 0 0 100px rgb(199, 118, 25);
+  }
+
+  to {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5), 0 0 20px rgb(199, 118, 25), 0 0 35px rgb(199, 118, 25), 0 0 40px rgb(199, 118, 25), 0 0 50px rgb(199, 118, 25);
+  }
+}
 
 .likelion-intro__arrow {
   font-size: 2em;
@@ -403,6 +421,13 @@ input[type="button"]:active {
   align-items: flex-start;
 }
 
+.hackerton-item:first-child {
+  background-image: url(images/hack_your_life.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .hackerton-item:nth-child(2) {
   background-image: url(images/ideaton.png);
   background-size: cover;
@@ -412,22 +437,25 @@ input[type="button"]:active {
 .hackerton-item:nth-child(3) {
   background-image: url(images/hackerton1.jpg);
   background-size: cover;
-  background-position: 50% 30%;
-
+  background-position: center center;
 }
 
 .hackerton-item:last-child {
   background-image: url(images/hackerton2.jpg);
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: center center;
 }
 
 .project-item:first-child {
-  background-color: #eb4d4b;
+  background-image: url(images/wonderful.png);
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .project-item:nth-child(2) {
-  background-color: #130f40;
+  background-image: url(images/wonderful1.png);
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .project-item:nth-child(3) {
@@ -436,6 +464,20 @@ input[type="button"]:active {
 
 .project-item:last-child {
   background-color: powderblue;
+}
+
+@media (max-width: 600px) {
+
+  .hackerton-item:nth-child(1),
+  .hackerton-item:nth-child(2) {
+    display: none;
+  }
+
+  .hackerton-item:nth-child(3) {
+    position: relative;
+    left: -70px;
+  }
+
 }
 
 /* .apply__wrapper {
@@ -475,9 +517,6 @@ input[type="button"]:active {
 .apply__non-major {
   color: white;
   background-color: #e74c3c;
-<<<<<<< HEAD
-}
-=======
 } */
 
 .apply__wrapper {
@@ -502,6 +541,7 @@ input[type="button"]:active {
   color: #e67e22;
   font-size: 50px;
 }
+
 .apply__form {
   display: flex;
   justify-content: space-around;
@@ -566,4 +606,3 @@ input[type="button"]:active {
 .apply__non-major {
   color: #e74c3c;
 }
->>>>>>> apply_1

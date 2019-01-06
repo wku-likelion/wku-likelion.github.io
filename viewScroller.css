@@ -37,10 +37,14 @@ html {
 /* mainviews */
 
 .mainbag {
-  position: relative; /* for any left/right separation */
-  overflow-y: hidden; /* for jQuery scrolls only */
+  position: relative;
+  /* for any left/right separation */
+  overflow-y: hidden;
+  /* for jQuery scrolls only */
+
   height: 100%;
-  width: 100%; /* if 100% then you can't use left/right separation */
+  width: 100%;
+  /* if 100% then you can't use left/right separation */
 }
 
 .mainview {
@@ -62,7 +66,8 @@ html {
 }
 
 .subview {
-  position: relative; /* important for any centered content inside subviews */
+  position: relative;
+  /* important for any centered content inside subviews */
   display: inline-block;
   height: 100%;
   width: 100%;
