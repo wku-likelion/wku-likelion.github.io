@@ -101,6 +101,20 @@ button::-moz-focus-inner,
   max-width: 488px;
   max-height: 488px;
 }
+.page2_partners {
+  width: 80%;
+  min-width: 230px;
+  min-height: 230px;
+  max-width: 488px;
+  max-height: 488px;
+}
+.page2_sponsors {
+  width: 80%;
+  min-width: 230px;
+  min-height: 230px;
+  max-width: 488px;
+  max-height: 488px;
+}
 
 .scroll-checkbox {
   position: relative;
@@ -361,12 +375,29 @@ input[type="button"]:active {
   font-size: 2em;
 }
 
-.likelion-info__left,
+.likelion-info__left {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  height: 100%;
+  flex-direction: column;
+}
+.page2-left-item {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-auto-flow: dense;
+}
+
+
 .likelion-info__right {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+  flex-direction: column;
 }
 
 .skill__wrapper {
