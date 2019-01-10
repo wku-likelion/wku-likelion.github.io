@@ -66,6 +66,20 @@ input {
   margin: 0;
 }
 
+.subview-a {
+  background-color: #2abaae;
+}
+
+.subview-b {
+  background-color: #0eab91;
+}
+
+.page2-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner {
   border-style: none;
@@ -726,4 +740,17 @@ h3.likelion-activitys__header {
     color: white;
     text-align: center;
   }
+}
+
+.icon__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon__wrapper>div>img {
+  padding: 10px;
+}
+
+.view6 {
+  background-color: white;
 }
