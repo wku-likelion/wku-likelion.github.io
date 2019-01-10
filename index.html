@@ -1,38 +1,118 @@
 ﻿<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1"
+    />
+    <meta
+      name="author"
+      content="Copyright (c) 2016 Marcin Gierczak (www.viewdesic.com)"
+    />
+    <meta
+      name="description"
+      content="viewScroller plugin by Marcin Gierczak. This plugin allows creating fullscreen scrollable webpage."
+    />
+    <meta
+      name="keywords"
+      content="viewScroller, fullscreen, html fullpage, scroll page, page scrolling, page scroll, full scroll"
+    />
+    <title>2019 LIKELION AT WKU</title>
+    <link rel="stylesheet" type="text/css" href="viewScroller.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1" />
-  <meta name="author" content="Copyright (c) 2016 Marcin Gierczak (www.viewdesic.com)" />
-  <meta name="description" content="viewScroller plugin by Marcin Gierczak. This plugin allows creating fullscreen scrollable webpage." />
-  <meta name="keywords" content="viewScroller, fullscreen, html fullpage, scroll page, page scrolling, page scroll, full scroll" />
-  <title>2019 LIKELION AT WKU</title>
-  <link rel="stylesheet" type="text/css" href="viewScroller.css" />
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-    crossorigin="anonymous" />
-</head>
-
-<body>
-  <div class="mainbag">
-    <div vs-anchor="view-1" class="mainview view1">
-      <div class="likelion-intro__wrapper">
-        <h1 class="likelion-intro__header">원광대학교 멋쟁이 사자처럼 </h1>
-        <div class="likelion-intro__logo">
-          <img src="images/footer-logo.png" alt="logo" width="300px" />
+  <body>
+    <div class="mainbag">
+      <div vs-anchor="view-1" class="mainview view1">
+        <div class="likelion-intro__wrapper">
+          <h1 class="likelion-intro__header">원광대학교 멋쟁이 사자처럼</h1>
+          <div class="likelion-intro__logo">
+            <img src="images/footer-logo.png" alt="logo" width="300px" />
+          </div>
+          <span class="likelion-intro__arrow">
+            <a href="#view-2"> <i class="fas fa-arrow-circle-down"></i> </a>
+          </span>
         </div>
-        <span class="likelion-intro__arrow">
-          <a href="#view-2"> <i class="fas fa-arrow-circle-down"></i> </a>
-        </span>
       </div>
-    </div>
-    <div vs-anchor="view-2" class="mainview">
-      <div class="subbag">
-        <div vs-anchor="subview-a" class="subview subview-a">
-          <!-- <div class="box">
+      <div vs-anchor="view-2" class="mainview">
+        <div class="subbag">
+          <div vs-anchor="subview-a" class="subview subview-a">
+            <div class="likelion-info__container">
+              <div class="likelion-info__leftWrapper">
+                <div class="likelion-info__left">
+                  <div class="page2-left-item">
+                    <img
+                      src="images/sponsors.png"
+                      alt="page2_sponsors"
+                      width="350px"
+                    />
+                    <img
+                      src="images/partners.png"
+                      alt="page2_partners"
+                      width="350px"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="likelion-info__rightWrapper">
+                <div class="likelion-info__right">
+                  <div class="skill__wrapper">
+                    <div class="skill">
+                      <!-- 여기넣을것들이 배울것들 정리해서넣을건지?-->
+                      <span class="skill__icon">
+                        <h4>웹 개발 스터디</h4>
+                        <ul>
+                          <li>HTML/CSS/JS</li>
+                          <li>Python</li>
+                          <li>Django</li>
+                          <li>AWS</li>
+                          <li>GITHUB</li>
+                          <li>TRELLO</li>
+                        </ul>
+                      </span>
+                    </div>
+                    <div class="skill">
+                      <span class="skill__icon">
+                        <h4>아이디어톤 & 해커톤</h4>
+                        <ul>
+                          <li>아이디어톤</li>
+                          <li>해커톤</li>
+                        </ul>
+                      </span>
+                    </div>
+                    <div class="skill">
+                      <span class="skill__icon">
+                        <h4>웹 개발 기초 스터디</h4>
+                        <ul>
+                          <li>HTML/CSS/JS</li>
+                        </ul>
+                      </span>
+                    </div>
+                    <div class="skill">
+                      <span class="skill__icon">
+                        <h4>웹 개발 기초 스터디</h4>
+                        <ul>
+                          <li>HTML/CSS/JS</li>
+                        </ul>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div vs-anchor="subview-b" class="subview subview-b">
+            <div class="box">
               <div class="info">
-                임세희
+                Subview B
                 <div class="pos">
                   <input type="button" value="&lt;" class="vs-subview-prev" />
                   <a href="#subview-a" class="vs-anchor"
@@ -46,92 +126,645 @@
                   /></a>
                   <input type="button" value="&gt;" class="vs-subview-next" />
                 </div>
-              </div>
-            </div> -->
-          <div class="likelion-info__container">
-            <div class="likelion-info__leftWrapper">
-              <div class="likelion-info__left">
-                원광대학교 멋쟁이사자처럼 _ 참여학교 & 후원
-                <!--여기 넣을 자료들 찾아야함 넣어둔사진보다 좋은이미지 찾아보기.
-                    그리고 또 넣을자료 있을지 찾아보고 넣기.
-                    지금넣은이미지들은 그냥 예시이고 여기 소개글넣을지 골라보기-->
-                <div class="page2-left-item">
-                  <img src="images/sponsors.png" alt="page2_sponsors" width="350px" />
-                  <img src="images/partners.png" alt="page2_partners" width="350px" />
-                </div>
-              </div>
-            </div>
-            <div class="likelion-info__rightWrapper">
-              <div class="likelion-info__right">
-                <div class="skill__wrapper">
-                  <div class="skill">
-                    <!-- 여기넣을것들이 배울것들 정리해서넣을건지?-->
-                    <span class="skill__icon">
-                      <h4>웹 개발 스터디</h4>
-                      <ul>
-                        <li>HTML/CSS/JS</li>
-                        <li>Python</li>
-                        <li>Django</li>
-                        <li>AWS</li>
-                        <li>GITHUB</li>
-                        <li>TRELLO</li>
-                      </ul>
-                    </span>
-                  </div>
-                  <div class="skill">
-                    <span class="skill__icon">
-                      <h4>아이디어톤 & 해커톤</h4>
-                      <ul>
-                        <li>아이디어톤</li>
-                        <li>해커톤</li>
-                      </ul>
-                    </span>
-                  </div>
-                  <div class="skill">
-                    <span class="skill__icon">
-                      <h4>웹 개발 기초 스터디</h4>
-                      <ul>
-                        <li>HTML/CSS/JS</li>
-                      </ul>
-                    </span>
-                  </div>
-                  <div class="skill">
-                    <span class="skill__icon">
-                      <h4>웹 개발 기초 스터디</h4>
-                      <ul>
-                        <li>HTML/CSS/JS</li>
-                      </ul>
-                    </span>
-                  </div>
+                <div class="page2-img">
+                  <img src="/images/sponsors.png" alt="sponsors" width="90%" />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div vs-anchor="subview-b" class="subview subview-b">
-          <div class="box">
-            <div class="info">
-              Subview B
-              <div class="pos">
-                <input type="button" value="&lt;" class="vs-subview-prev" />
-                <a href="#subview-a" class="vs-anchor"><input type="button" value="A" /></a>
-                <a href="#subview-b" class="vs-anchor"><input type="button" value="B" /></a>
-                <a href="#subview-c" class="vs-anchor"><input type="button" value="C" /></a>
-                <input type="button" value="&gt;" class="vs-subview-next" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div vs-anchor="subview-c" class="subview subview-c">
-          <div class="box">
-            <div class="info">
-              Subview C
-              <div class="pos">
-                <input type="button" value="&lt;" class="vs-subview-prev" />
-                <a href="#subview-a" class="vs-anchor"><input type="button" value="A" /></a>
-                <a href="#subview-b" class="vs-anchor"><input type="button" value="B" /></a>
-                <a href="#subview-c" class="vs-anchor"><input type="button" value="C" /></a>
-                <input type="button" value="&gt;" class="vs-subview-next" />
+          <div vs-anchor="subview-c" class="subview subview-c">
+            <div class="page3-box">
+              <div class="page3-info">
+                <h1>Partners</h1>
+                <br />
+                <h2>전세계적으로 함께하는 대학교들</h2>
+                <br />
+                <div class="icon__wrapper">
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-1-1884b7208d1fb6c4427acfef09c574ea94bf6eb4ccdc873217be978501e4fd32.png"
+                      alt="Univ 1"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-2-f04b91ec2c38e3ae42f0e21f87abd5af1ed674cb428833b5f25784386e2c3413.png"
+                      alt="Univ 2"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-3-fcda63454e6078a8aa55a29d0e354d84e90caffa4b0f0ca8f8cb65efb2625e99.png"
+                      alt="Univ 3"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-4-de8eeaa5d5424ba2ceed0602cc148a21e8a8f4e301e6413770dd6533a4697720.png"
+                      alt="Univ 4"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-5-c9bbbcdad5c0836dae38426f7bcbd7fb292227cf4dd39ba7687e6517c45a4438.png"
+                      alt="Univ 5"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-6-6715ddb233dd8a450338a99b952d93a8ffe30daeddae7353ba747f84e592e68c.png"
+                      alt="Univ 6"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-7-fc4f27bd6385c339f68f09cc26a1afee43180edf2a94d61f00b1d70b783e2c6f.png"
+                      alt="Univ 7"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-8-34dccd5ccdb5c5017cf7173ce3dec7d0a3cc3b3d077cfe5a167df6f10c093de6.png"
+                      alt="Univ 8"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-9-cf4923165a7262e3609a348167cd184dc4d06510e5676f08771d6596e18a7ba0.png"
+                      alt="Univ 9"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-10-3715da32aec27f7e209a6c7930d7f451fe004dfcb39a6274f7a191f44e8a7b9f.png"
+                      alt="Univ 10"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-11-b1fa86ed60db716952e6063b911f6f7f3f9085128ddb2a74d43e81b66a96c0a6.png"
+                      alt="Univ 11"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-12-f152353525b5c0b347e9c4c78efcc07199d1e4ae680c2feb80671f8aad2b6aca.png"
+                      alt="Univ 12"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-13-bc0d2c35a8fb6ab406181a5cd60cf3f2d9bb6a1fe21a2cae90757f0bd1c7d492.png"
+                      alt="Univ 13"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-14-7224a22658ed40e44c5b92726866b669186d1fb435e2e934b228be5303552c02.png"
+                      alt="Univ 14"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-15-963ce4328ae1b1de1456581bdddf7598b326577f7ee5fc1eed23f30f1629bd66.png"
+                      alt="Univ 15"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-16-a06866ae3d6a082defad20978f1ad204d4836ce67447808092f16e3ee40af57a.png"
+                      alt="Univ 16"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-17-7736d43b56d3ca44f0db4f539fd0ba2038df6cdcbac7370cabb3ccaedab0c7e9.png"
+                      alt="Univ 17"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-18-ecd5f85316066f249982cafaf7a630dd6c362c528cc445f38fe8488e82e47048.png"
+                      alt="Univ 18"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-19-fa66f15cdfce0e7ef269d3d025cdbccca66721cb0a72925252427aa07a5e704b.png"
+                      alt="Univ 19"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-20-c4df85fbcd5385855b0409294cc5a9a65f4d30abd6dab814b1c1243b5ebf5d8f.png"
+                      alt="Univ 20"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-21-eed8543b8c21bdbc0531ab540577b719a152fc0f641f7ee53ba40662162f5e0f.png"
+                      alt="Univ 21"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-22-7f8fa11b9770492159c32b4fb4696651033612028b8fb351cda713d96705e587.png"
+                      alt="Univ 22"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-23-ca3a27de531583195dca214c8ce151c3ba433d0672bdd7a4758f378d4258ace8.png"
+                      alt="Univ 23"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-24-6b39ed56d5e6df9ec02ec6c4ce0fdb08d06803beb07f42dcc7fa598aed0cb931.png"
+                      alt="Univ 24"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-25-154a083efed6df25fd3b55599499de0753495860a16e88743d910f897de5c208.png"
+                      alt="Univ 25"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-26-c3b03065412a5301d701bdcb4154ba8914cb9af722e051c497620673817c32c1.png"
+                      alt="Univ 26"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-27-702537728fcbc14e74734fe074938c434a9d46e4847ea25a3afadcd6a6741005.png"
+                      alt="Univ 27"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-28-ea6f8f22503d309ac1014811e598efef9fafa50f8f8df9747aa97aac53fd837f.png"
+                      alt="Univ 28"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-29-fd1c0c607537533b0007086cc77e0ef9e1231f770c13113f806b0c23163988a8.png"
+                      alt="Univ 29"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-30-e337ce736d9dec7a6f37d1aaa41cd0c4669d4faaa953fe2663aac93b57c4d4ee.png"
+                      alt="Univ 30"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-31-4f5980a66072a5da5899af4258effe097a13a86a94e2fe312b0ac0fc3df4fd53.png"
+                      alt="Univ 31"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-32-f4f219bd49920820408ea21d5376933150344681225d6935232d4536140bd33a.png"
+                      alt="Univ 32"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-33-b023a15aa7cafee504e3e5728e489bbf1956c9f3686d1582c3d762ffbedb2027.png"
+                      alt="Univ 33"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-34-65cc90b6594a8bee55eefe2aee1620781ce43f93d6c1358954cc801b180edf98.png"
+                      alt="Univ 34"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-35-da1e944ee9ad1441da7453245214dd7caffca566f3d5296e045fa2124022e7bb.png"
+                      alt="Univ 35"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-36-32bc2dcc2f2cd8e113a0ddf1154d63a2c9474f8cf8bb27c960d092ca42edc52f.png"
+                      alt="Univ 36"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-37-f1355e7d707f91c40cbe931286b78ad8075865c0bc32ee16c369aca014484228.png"
+                      alt="Univ 37"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-38-511365010fafac53a0305a2ff4a01c7f12255fc78b692b1b137048c286c8774a.png"
+                      alt="Univ 38"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-39-f8ab996ed134fb711ce4db724cb91136009ec65819d446ab1f2b946057971260.png"
+                      alt="Univ 39"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-40-08062460b72b30a23d7ad7ab044edbb2b6021d32e8d682f80000351678a9b39a.png"
+                      alt="Univ 40"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-41-b45f3b0cf9fd61835f42a88acccfe26fb18735c6a1b40ce3fcbce93d6ec0ceb3.png"
+                      alt="Univ 41"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-42-6b0bdea60fa041d92c7519b84143f80542c531f7c47c97ab7d768cc73de6432c.png"
+                      alt="Univ 42"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-43-2ea7c17795ad58f56dc0062cd02ead3cdf4aa79cfbf9745b4a6b2353f75b9d37.png"
+                      alt="Univ 43"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-44-ec3156470678604f8c41b1b0b383ea3351941e46843351a018826af9b09ecbd8.png"
+                      alt="Univ 44"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-45-84ffb5ebc26981c8c2923cfdb30374b92c120e768178579bd74110cea0f1195b.png"
+                      alt="Univ 45"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-46-a1921e4716420f53af11322ac28572c7c6435a96b0a7b0a2e75e6cb627c0bfea.png"
+                      alt="Univ 46"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-47-72a43ca69e709a2687bd415d1f5f7f113b41edb136d325c94266227b789f3a54.png"
+                      alt="Univ 47"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-48-15ffeb3ad15fc2243fb98e0909596fc6ab6664e44580eb6caf56dac3b8d8f4a0.png"
+                      alt="Univ 48"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-49-f511810b694dd38aa75241fef10af040c2912dd13533b3650ea438d42edf259f.png"
+                      alt="Univ 49"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-50-ca1f1a9da8c9913ad2889b8c4d0affafb2cce6fa989d904b5f1c495eb0189e9f.png"
+                      alt="Univ 50"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-51-1f25d08dd480b32fe8dfcd64c0abba05979855d27a34520bf3abf464aae60bfd.png"
+                      alt="Univ 51"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-52-21403e286f88ff84e1337b1f6d689f30519f68c71baf0f75646905c8c657dc80.png"
+                      alt="Univ 52"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-53-97d4d9933fd2fb1ce1177e394542e6964f12082850c6aef9a7673abadd0a42e2.png"
+                      alt="Univ 53"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-54-a4b3177354d0b2f3a1a8bff891c1bca3a07be698a15970080f4ca0b24f903314.png"
+                      alt="Univ 54"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-55-edaa1f0a25a259203bcf643f6e7a6f68b71c6448a8074a4c4fb25a16ac79e0cb.png"
+                      alt="Univ 55"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-56-b29b0fd9c08621af9e278be99078732f15f8c4a271ff87ed7d87178217a0c045.png"
+                      alt="Univ 56"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-57-6ccdc994ad9458e995180bf65cdc2518c4177f42055d519305ff23d2713873f1.png"
+                      alt="Univ 57"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-58-82ae0792223079b8da020548222362bed03fc39a1073549f286442f7be955627.png"
+                      alt="Univ 58"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-59-548692151c3fa1876d5c6de05b07c59c6c82233ca166bcfab7cffef4a1b16ce4.png"
+                      alt="Univ 59"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-60-8d13163cdce55fcd6ffd64e0ced1702b296f9d70dca4514f1f3b42ecb5ac92f5.png"
+                      alt="Univ 60"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-61-4dff6ab760182f9bb72892d27c70a3b8fbe9095ebcc784115d9c8a98ab730d5d.png"
+                      alt="Univ 61"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-62-d1aa40f63f85252aea5eba2d2fe80396f2cf9736b25e0f77f9cbc7ec4fc14061.png"
+                      alt="Univ 62"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-63-94d58ac2c7647f79cf9492e84c46546212b05fc0811b5a867c6b09286c24e10e.png"
+                      alt="Univ 63"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-64-08a1f2a645f59c11ffd999d86f9a44e8d0b0d17619608854bb2d56762e8ed47c.png"
+                      alt="Univ 64"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-65-35961a3fc0c6d79b7c063c0f47e00010e0089a2d1b9027ba3a2cd8c9cf3a44e9.png"
+                      alt="Univ 65"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-66-73fe751fb7a9401038648a9e243048a13c9d400a5a8350f3ff88c4db340e817a.png"
+                      alt="Univ 66"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-67-26b9a0bbab46e8c8c150d0670883624d28d8859649ecfa4820c72578bb91ca78.png"
+                      alt="Univ 67"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-68-86ea2b8b45fab52101f58ace2b66af9862bb066e667183ad5be74500d4367359.png"
+                      alt="Univ 68"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-69-7cd3c131f3b256c866e1818d87351c32b4d2905f6f9b964b2fd61278e7c8e6ee.png"
+                      alt="Univ 69"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-70-c888aaac83f0308faf85bd0e642c245c206a306c674e33e84830ccf75885d2b4.png"
+                      alt="Univ 70"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-71-add6a4b0b1520b36eefdb9f0aeafc81f76bdf939a8beb806262d23d1eb317ffb.png"
+                      alt="Univ 71"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-72-2219ec756a8f319bff614960e09ec0ab6e2b1d6634a17964e637266459ad271b.png"
+                      alt="Univ 72"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-73-0a3c7e58f42ad0f607bca65d3afd56a2ba4b75c131c95e20f3987f6365c6a009.png"
+                      alt="Univ 73"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-74-8337b7b4c279b21bedd2b07f61c0f6ef04042e4dff6cddba674090f9d4b9f874.png"
+                      alt="Univ 74"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-75-6fac780ba3d4d6169a6f0b33292aa6318b3f3a61e83ef23a7ed30a9ac5516dd8.png"
+                      alt="Univ 75"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-76-988b9122bd816078541c2e5312a7b51989f8fe79204bd96c8aec7b130a13856c.png"
+                      alt="Univ 76"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-77-5098e53bbfe01cf322fc026c9b5e3bdbc66e976c8ebea268fc222ee7aeaf0393.png"
+                      alt="Univ 77"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-78-67914b142408ddc429d414a3630b9950fb5fa660679a8f8cf5fee539e19dd961.png"
+                      alt="Univ 78"
+                      width="60px"
+                      height="60px"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -142,14 +775,10 @@
     <div vs-anchor="view-3" class="mainview view3">
       <div class="likelion-activitys">
         <div class="likelion-hackerton">
-          <div class="hackerton-item">
-          </div>
-          <div class="hackerton-item">
-          </div>
-          <div class="hackerton-item">
-          </div>
-          <div class="hackerton-item">
-          </div>
+          <div class="hackerton-item"></div>
+          <div class="hackerton-item"></div>
+          <div class="hackerton-item"></div>
+          <div class="hackerton-item"></div>
         </div>
       </div>
     </div>
@@ -168,21 +797,20 @@
       <div class="apply__wrapper">
         <div class="apply__info">
           <div class="apply__info-title">
-            <h1>
-              원광대학교 <span>멋쟁이 사자처럼 7기</span>에 지원해보세요.
-            </h1>
+            <h1>원광대학교 <span>멋쟁이 사자처럼 7기</span>에 지원해보세요.</h1>
           </div>
         </div>
 
         <div class="apply__form">
           <div class="apply__majorbtn" onclick="location.href='major.html';">
-            <div class="apply__majorIcon">
-              <i class="fas fa-user-cog"></i>
-            </div>
+            <div class="apply__majorIcon"><i class="fas fa-user-cog"></i></div>
             <div class="apply__major">전공자</div>
           </div>
 
-          <div class="apply__non-majorbtn" onclick="location.href='non_major.html';">
+          <div
+            class="apply__non-majorbtn"
+            onclick="location.href='non_major.html';"
+          >
             <div class="apply__non-majorIcon">
               <i class="fas fa-user-edit"></i>
             </div>
@@ -191,326 +819,7 @@
         </div>
       </div>
     </div>
-    <div vs-anchor="view-6" class="mainview view6">
-      <div>
-        <h1>멋쟁이 사자처럼 대학교</h1>
-      </div>
-      <div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-1-1884b7208d1fb6c4427acfef09c574ea94bf6eb4ccdc873217be978501e4fd32.png"
-            alt="Univ 1" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-2-f04b91ec2c38e3ae42f0e21f87abd5af1ed674cb428833b5f25784386e2c3413.png"
-            alt="Univ 2" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-3-fcda63454e6078a8aa55a29d0e354d84e90caffa4b0f0ca8f8cb65efb2625e99.png"
-            alt="Univ 3" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-4-de8eeaa5d5424ba2ceed0602cc148a21e8a8f4e301e6413770dd6533a4697720.png"
-            alt="Univ 4" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-5-c9bbbcdad5c0836dae38426f7bcbd7fb292227cf4dd39ba7687e6517c45a4438.png"
-            alt="Univ 5" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-6-6715ddb233dd8a450338a99b952d93a8ffe30daeddae7353ba747f84e592e68c.png"
-            alt="Univ 6" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-7-fc4f27bd6385c339f68f09cc26a1afee43180edf2a94d61f00b1d70b783e2c6f.png"
-            alt="Univ 7" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-8-34dccd5ccdb5c5017cf7173ce3dec7d0a3cc3b3d077cfe5a167df6f10c093de6.png"
-            alt="Univ 8" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-9-cf4923165a7262e3609a348167cd184dc4d06510e5676f08771d6596e18a7ba0.png"
-            alt="Univ 9" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-10-3715da32aec27f7e209a6c7930d7f451fe004dfcb39a6274f7a191f44e8a7b9f.png"
-            alt="Univ 10" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-11-b1fa86ed60db716952e6063b911f6f7f3f9085128ddb2a74d43e81b66a96c0a6.png"
-            alt="Univ 11" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-12-f152353525b5c0b347e9c4c78efcc07199d1e4ae680c2feb80671f8aad2b6aca.png"
-            alt="Univ 12" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-13-bc0d2c35a8fb6ab406181a5cd60cf3f2d9bb6a1fe21a2cae90757f0bd1c7d492.png"
-            alt="Univ 13" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-14-7224a22658ed40e44c5b92726866b669186d1fb435e2e934b228be5303552c02.png"
-            alt="Univ 14" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-15-963ce4328ae1b1de1456581bdddf7598b326577f7ee5fc1eed23f30f1629bd66.png"
-            alt="Univ 15" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-16-a06866ae3d6a082defad20978f1ad204d4836ce67447808092f16e3ee40af57a.png"
-            alt="Univ 16" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-17-7736d43b56d3ca44f0db4f539fd0ba2038df6cdcbac7370cabb3ccaedab0c7e9.png"
-            alt="Univ 17" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-18-ecd5f85316066f249982cafaf7a630dd6c362c528cc445f38fe8488e82e47048.png"
-            alt="Univ 18" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-19-fa66f15cdfce0e7ef269d3d025cdbccca66721cb0a72925252427aa07a5e704b.png"
-            alt="Univ 19" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-20-c4df85fbcd5385855b0409294cc5a9a65f4d30abd6dab814b1c1243b5ebf5d8f.png"
-            alt="Univ 20" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-21-eed8543b8c21bdbc0531ab540577b719a152fc0f641f7ee53ba40662162f5e0f.png"
-            alt="Univ 21" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-22-7f8fa11b9770492159c32b4fb4696651033612028b8fb351cda713d96705e587.png"
-            alt="Univ 22" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-23-ca3a27de531583195dca214c8ce151c3ba433d0672bdd7a4758f378d4258ace8.png"
-            alt="Univ 23" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-24-6b39ed56d5e6df9ec02ec6c4ce0fdb08d06803beb07f42dcc7fa598aed0cb931.png"
-            alt="Univ 24" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-25-154a083efed6df25fd3b55599499de0753495860a16e88743d910f897de5c208.png"
-            alt="Univ 25" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-26-c3b03065412a5301d701bdcb4154ba8914cb9af722e051c497620673817c32c1.png"
-            alt="Univ 26" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-27-702537728fcbc14e74734fe074938c434a9d46e4847ea25a3afadcd6a6741005.png"
-            alt="Univ 27" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-28-ea6f8f22503d309ac1014811e598efef9fafa50f8f8df9747aa97aac53fd837f.png"
-            alt="Univ 28" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-29-fd1c0c607537533b0007086cc77e0ef9e1231f770c13113f806b0c23163988a8.png"
-            alt="Univ 29" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-30-e337ce736d9dec7a6f37d1aaa41cd0c4669d4faaa953fe2663aac93b57c4d4ee.png"
-            alt="Univ 30" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-31-4f5980a66072a5da5899af4258effe097a13a86a94e2fe312b0ac0fc3df4fd53.png"
-            alt="Univ 31" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-32-f4f219bd49920820408ea21d5376933150344681225d6935232d4536140bd33a.png"
-            alt="Univ 32" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-33-b023a15aa7cafee504e3e5728e489bbf1956c9f3686d1582c3d762ffbedb2027.png"
-            alt="Univ 33" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-34-65cc90b6594a8bee55eefe2aee1620781ce43f93d6c1358954cc801b180edf98.png"
-            alt="Univ 34" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-35-da1e944ee9ad1441da7453245214dd7caffca566f3d5296e045fa2124022e7bb.png"
-            alt="Univ 35" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-36-32bc2dcc2f2cd8e113a0ddf1154d63a2c9474f8cf8bb27c960d092ca42edc52f.png"
-            alt="Univ 36" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-37-f1355e7d707f91c40cbe931286b78ad8075865c0bc32ee16c369aca014484228.png"
-            alt="Univ 37" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-38-511365010fafac53a0305a2ff4a01c7f12255fc78b692b1b137048c286c8774a.png"
-            alt="Univ 38" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-39-f8ab996ed134fb711ce4db724cb91136009ec65819d446ab1f2b946057971260.png"
-            alt="Univ 39" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-40-08062460b72b30a23d7ad7ab044edbb2b6021d32e8d682f80000351678a9b39a.png"
-            alt="Univ 40" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-41-b45f3b0cf9fd61835f42a88acccfe26fb18735c6a1b40ce3fcbce93d6ec0ceb3.png"
-            alt="Univ 41" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-42-6b0bdea60fa041d92c7519b84143f80542c531f7c47c97ab7d768cc73de6432c.png"
-            alt="Univ 42" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-43-2ea7c17795ad58f56dc0062cd02ead3cdf4aa79cfbf9745b4a6b2353f75b9d37.png"
-            alt="Univ 43" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-44-ec3156470678604f8c41b1b0b383ea3351941e46843351a018826af9b09ecbd8.png"
-            alt="Univ 44" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-45-84ffb5ebc26981c8c2923cfdb30374b92c120e768178579bd74110cea0f1195b.png"
-            alt="Univ 45" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-46-a1921e4716420f53af11322ac28572c7c6435a96b0a7b0a2e75e6cb627c0bfea.png"
-            alt="Univ 46" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-47-72a43ca69e709a2687bd415d1f5f7f113b41edb136d325c94266227b789f3a54.png"
-            alt="Univ 47" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-48-15ffeb3ad15fc2243fb98e0909596fc6ab6664e44580eb6caf56dac3b8d8f4a0.png"
-            alt="Univ 48" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-49-f511810b694dd38aa75241fef10af040c2912dd13533b3650ea438d42edf259f.png"
-            alt="Univ 49" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-50-ca1f1a9da8c9913ad2889b8c4d0affafb2cce6fa989d904b5f1c495eb0189e9f.png"
-            alt="Univ 50" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-51-1f25d08dd480b32fe8dfcd64c0abba05979855d27a34520bf3abf464aae60bfd.png"
-            alt="Univ 51" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-52-21403e286f88ff84e1337b1f6d689f30519f68c71baf0f75646905c8c657dc80.png"
-            alt="Univ 52" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-53-97d4d9933fd2fb1ce1177e394542e6964f12082850c6aef9a7673abadd0a42e2.png"
-            alt="Univ 53" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-54-a4b3177354d0b2f3a1a8bff891c1bca3a07be698a15970080f4ca0b24f903314.png"
-            alt="Univ 54" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-55-edaa1f0a25a259203bcf643f6e7a6f68b71c6448a8074a4c4fb25a16ac79e0cb.png"
-            alt="Univ 55" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-56-b29b0fd9c08621af9e278be99078732f15f8c4a271ff87ed7d87178217a0c045.png"
-            alt="Univ 56" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-57-6ccdc994ad9458e995180bf65cdc2518c4177f42055d519305ff23d2713873f1.png"
-            alt="Univ 57" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-58-82ae0792223079b8da020548222362bed03fc39a1073549f286442f7be955627.png"
-            alt="Univ 58" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-59-548692151c3fa1876d5c6de05b07c59c6c82233ca166bcfab7cffef4a1b16ce4.png"
-            alt="Univ 59" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-60-8d13163cdce55fcd6ffd64e0ced1702b296f9d70dca4514f1f3b42ecb5ac92f5.png"
-            alt="Univ 60" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-61-4dff6ab760182f9bb72892d27c70a3b8fbe9095ebcc784115d9c8a98ab730d5d.png"
-            alt="Univ 61" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-62-d1aa40f63f85252aea5eba2d2fe80396f2cf9736b25e0f77f9cbc7ec4fc14061.png"
-            alt="Univ 62" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-63-94d58ac2c7647f79cf9492e84c46546212b05fc0811b5a867c6b09286c24e10e.png"
-            alt="Univ 63" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-64-08a1f2a645f59c11ffd999d86f9a44e8d0b0d17619608854bb2d56762e8ed47c.png"
-            alt="Univ 64" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-65-35961a3fc0c6d79b7c063c0f47e00010e0089a2d1b9027ba3a2cd8c9cf3a44e9.png"
-            alt="Univ 65" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-66-73fe751fb7a9401038648a9e243048a13c9d400a5a8350f3ff88c4db340e817a.png"
-            alt="Univ 66" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-67-26b9a0bbab46e8c8c150d0670883624d28d8859649ecfa4820c72578bb91ca78.png"
-            alt="Univ 67" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-68-86ea2b8b45fab52101f58ace2b66af9862bb066e667183ad5be74500d4367359.png"
-            alt="Univ 68" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-69-7cd3c131f3b256c866e1818d87351c32b4d2905f6f9b964b2fd61278e7c8e6ee.png"
-            alt="Univ 69" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-70-c888aaac83f0308faf85bd0e642c245c206a306c674e33e84830ccf75885d2b4.png"
-            alt="Univ 70" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-71-add6a4b0b1520b36eefdb9f0aeafc81f76bdf939a8beb806262d23d1eb317ffb.png"
-            alt="Univ 71" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-72-2219ec756a8f319bff614960e09ec0ab6e2b1d6634a17964e637266459ad271b.png"
-            alt="Univ 72" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-73-0a3c7e58f42ad0f607bca65d3afd56a2ba4b75c131c95e20f3987f6365c6a009.png"
-            alt="Univ 73" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-74-8337b7b4c279b21bedd2b07f61c0f6ef04042e4dff6cddba674090f9d4b9f874.png"
-            alt="Univ 74" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-75-6fac780ba3d4d6169a6f0b33292aa6318b3f3a61e83ef23a7ed30a9ac5516dd8.png"
-            alt="Univ 75" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-76-988b9122bd816078541c2e5312a7b51989f8fe79204bd96c8aec7b130a13856c.png"
-            alt="Univ 76" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-77-5098e53bbfe01cf322fc026c9b5e3bdbc66e976c8ebea268fc222ee7aeaf0393.png"
-            alt="Univ 77" width="50px" height="50px">
-        </div>
-        <div>
-          <img src="https://d2hmp4n7p97ldw.cloudfront.net/assets/partners/univs/univ-78-67914b142408ddc429d414a3630b9950fb5fa660679a8f8cf5fee539e19dd961.png"
-            alt="Univ 78" width="50px" height="50px">
-        </div>
-
-      </div>
-    </div>
+    <div vs-anchor="view-6" class="mainview view6"></div>
 
     <script src="jquery-3.1.0.min.js"></script>
     <script src="jquery.easing.min.js"></script>
@@ -518,27 +827,27 @@
     <!-- <script src="viewScroller.min.js"></script> //-->
     <script src="viewScroller.js"></script>
     <script>
-      $(document).ready(function () {
+      $(document).ready(function() {
         // Sets viewScroller with sample events
         $(".mainbag").viewScroller({
           useScrollbar: false,
-          beforeChange: function () {
+          beforeChange: function() {
             console.log("beforeChange fired!");
             return false; // It means that views change will be terminated
           },
-          afterChange: function () {
+          afterChange: function() {
             console.log("afterChange fired!");
           },
-          beforeResize: function () {
+          beforeResize: function() {
             console.log("beforeResize fired!");
           },
-          afterResize: function () {
+          afterResize: function() {
             console.log("afterResize fired!");
           }
         });
 
         // Turnon / turnoff the scroll views when they are animate
-        $("#scroll").on("click", function () {
+        $("#scroll").on("click", function() {
           if ($("#scroll").prop("checked")) {
             $.fn.viewScroller.setChangeWhenAnim(true);
           } else {
@@ -547,6 +856,5 @@
         });
       });
     </script>
-</body>
-
+  </body>
 </html>
