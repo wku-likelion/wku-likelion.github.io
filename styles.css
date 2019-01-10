@@ -24,10 +24,40 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'TmonMonsori';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BMHANNAPro';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: "GyeonggiBatang", "yg-jalnan", -apple-system, BlinkMacSystemFont,
+  /* font-family: "TmonMonsori", "GyeonggiBatang",
+    "yg-jalnan",
+    -apple-system,
+    BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+    sans-serif; */
+  background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'TmonMonsori';
+}
+
+li {
+  font-family: 'BMHANNAPro';
 }
 
 button,
@@ -39,48 +69,6 @@ input {
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner {
   border-style: none;
-}
-
-/* Custom views styles */
-
-.view1 {
-  background-color: black;
-}
-
-.view2 {
-  background-color: #2abaae;
-}
-
-.view3 {
-  background-color: black;
-}
-
-.view4 {
-  background-color: #13544f;
-}
-
-.view5 {
-  background-color: #28d5cf;
-}
-
-.subview-a {
-  background-color: #2abaae;
-}
-
-.subview-b {
-  background-color: #0eab91;
-}
-
-.subview-c {
-  background-color: #13ad58;
-}
-
-.subview-d {
-  background-color: #45bca1;
-}
-
-.subview-e {
-  background-color: #23dc94;
 }
 
 /* GUI */
@@ -101,6 +89,7 @@ button::-moz-focus-inner,
   max-width: 488px;
   max-height: 488px;
 }
+
 .page2_partners {
   width: 80%;
   min-width: 230px;
@@ -108,6 +97,7 @@ button::-moz-focus-inner,
   max-width: 488px;
   max-height: 488px;
 }
+
 .page2_sponsors {
   width: 80%;
   min-width: 230px;
@@ -347,7 +337,6 @@ input[type="button"]:active {
   animation: neon2 1.5s ease-in-out infinite alternate;
 }
 
-
 @-webkit-keyframes neon2 {
   from {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.5), 0 0 40px rgb(199, 118, 25), 0 0 70px rgb(199, 118, 25), 0 0 80px rgb(199, 118, 25), 0 0 100px rgb(199, 118, 25);
@@ -382,6 +371,7 @@ input[type="button"]:active {
   height: 100%;
   flex-direction: column;
 }
+
 .page2-left-item {
   display: flex;
   justify-content: center;
@@ -416,6 +406,9 @@ input[type="button"]:active {
 
 .skill:first-child {
   background-color: #1abc9c;
+  background-image: url(images/hackerton1.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
 .skill:nth-child(2) {
@@ -636,4 +629,29 @@ input[type="button"]:active {
 
 .apply__non-major {
   color: #e74c3c;
+}
+
+
+
+/* Second Page */
+.likelion-activitys__header,
+.likelion-activitys__item {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+h3.likelion-activitys__header {
+  color: orange;
+}
+
+@media (max-width: 600px) {
+
+  .likelion-activitys__header,
+  .likelion-activitys__item {
+    font-size: 1em;
+    color: white;
+    text-align: center;
+  }
 }
