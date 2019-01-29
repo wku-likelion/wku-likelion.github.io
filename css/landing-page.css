@@ -5,6 +5,13 @@
  */
 @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
 
+@font-face {
+  font-family: 'NIXGONL-Vb';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONL-Vb.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'Black Han Sans', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -14,8 +21,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+h6,
+p {
+  font-family: 'NIXGONL-Vb', 'Lato',
+    'Helvetica Neue',
+    Helvetica,
+    Arial,
+    sans-serif;
   font-weight: 700;
 }
 
@@ -126,4 +138,20 @@ header.masthead h1 {
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+/* custom */
+
+.operator {
+  display: inline;
+  border-bottom: 1px solid black;
+  padding-bottom: 30px;
+}
+
+.operator__title {
+  margin-bottom: 50px;
+}
+
+.operator__members {
+  margin-top: 10px;
 }
