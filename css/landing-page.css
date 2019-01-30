@@ -3,17 +3,19 @@
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/master/LICENSE)
  */
-@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
+@import url("https://fonts.googleapis.com/css?family=Black+Han+Sans:400");
 
 @font-face {
-  font-family: 'NIXGONL-Vb';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONL-Vb.woff') format('woff');
+  font-family: "NIXGONL-Vb";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONL-Vb.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'Black Han Sans', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Black Han Sans", "Lato", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
 }
 
 h1,
@@ -23,12 +25,9 @@ h4,
 h5,
 h6,
 p {
-  font-family: 'NIXGONL-Vb', 'Lato',
-    'Helvetica Neue',
-    Helvetica,
-    Arial,
+  font-family: "NIXGONL-Vb", "Lato", "Helvetica Neue", Helvetica, Arial,
     sans-serif;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 header.masthead {
@@ -50,8 +49,8 @@ header.masthead .overlay {
   opacity: 0.3;
 }
 
-header.masthead h1 {
-  font-size: 2rem;
+header.masthead h3 {
+  font-size: 1.8rem;
 }
 
 @media (min-width: 768px) {
@@ -60,8 +59,8 @@ header.masthead h1 {
     padding-bottom: 12rem;
   }
 
-  header.masthead h1 {
-    font-size: 3rem;
+  header.masthead h3 {
+    font-size: 2rem;
   }
 }
 
@@ -116,28 +115,10 @@ header.masthead h1 {
   box-shadow: 0px 5px 5px 0px #adb5bd;
 }
 
-.call-to-action {
-  position: relative;
-  background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
-  background-size: cover;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
-.call-to-action .overlay {
-  position: absolute;
-  background-color: #212529;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.3;
-}
-
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  background-color: #2c3e50;
 }
 
 /* custom */
@@ -154,4 +135,13 @@ footer.footer {
 
 .operator__members {
   margin-top: 10px;
+}
+
+.intro {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.icon {
+  color: white;
 }
