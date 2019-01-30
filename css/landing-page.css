@@ -145,3 +145,7 @@ footer.footer {
 .icon {
   color: white;
 }
+
+.member {
+  list-style: none;
+}
